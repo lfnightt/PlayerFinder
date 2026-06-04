@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IVy | Sunset Player Info</title>
+<link rel="stylesheet" href="icons/icons.css">
+<link rel="stylesheet" href="icons/icons-fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-parallax" id="parallax"></div>
+<div class="matrix-sparks" id="sparks"></div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <input id="sidebarSearch" type="text" placeholder="Search players...">
+        </div>
+
+        <div class="sidebar-list" id="playerList"></div>
+        <button onclick="openServers('./servers_list/')"><i class="fa fa-rocket"></i>IVy | VMP Servers List</button>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="search-box">
+            <div class="search-inner">
+                <input id="playerIdInput" type="text" placeholder="Enter Player ID...">
+                <button id="searchBtn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="result-box" id="resultBox">
+            <h2 class="glow">IVy | Sunset Player Info</h2>
+            <p class="typewriter">Search for a player by ID or click a player from the sidebar.</p>
+        </div>
+        <footer style="text-align: center;margin-left: -300px;margin-top: -30px;"><p>Created With ❤️ For <span style="color: red;font-weight: bold;cursor: pointer;">IRANIAN</span> Players.</p>
+        <p>Designs by <span style="color: rgb(28, 122, 28);font-weight: bold;cursor: pointer;">IVy</span> Team.</p></footer>
+    </div>
+
+</div>
+    <script>
+        function openServers(url) {
+        window.open(url, '_self');
+        }
+    </script>
+<script src="app.js"></script>
+</body>
+</html>
